@@ -1,0 +1,654 @@
+:root {
+    --body-color: black;
+    --header-color: rgba(1, 1, 1, 0.3);
+    --text-color-3: rgb(126, 118, 118);
+    --text-color-4: white;
+    --text-color: black;
+    --hero-color: black;
+}
+
+.music {height: 100%;
+    width: 100%;
+    display:flex;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    color: white;
+}
+
+@media (min-width: 1100px) {
+    h1 {font-size: 55.6px;}
+    h2 {font-size: 55.6px;}
+    h3 {font-size: 34.4px;}
+    p {font-size: 17px;}
+    .text {height: 120px;}
+    #hero {height: 750px;}
+    .about-1-image {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 50%;
+        bottom: 0;
+        background-image: url(/img/cecceimg1.jpg);
+        background-size: 48% auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .about-1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height:50%;
+        width: 100%;
+    }
+    
+    .about-2 {
+        position: relative;
+        top:0;
+        width: 100%;
+        height: 50%;
+    }
+
+    #about-section {
+        margin-top: 0;
+        position: relative;
+        height: 1000px;
+        width: 100%;
+    }
+
+    .about-1-text {
+        position: absolute;
+        left: 52%;
+        width: 50%;
+        height: 80%;
+        top: 0;
+    }
+    
+    .about-1-text p {
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        top: 0;
+        left: 0;
+    }
+
+    .hamburger {
+        display: none;
+        z-index: 4;
+    }
+    .hamburger-menu {
+        display: none !important;
+    }
+
+    #contact-section {
+        height: 300px;
+    }
+
+}
+
+@media (min-width: 830px) and (max-width: 1099px) {
+    h1 {font-size: 43.2px;}
+    h2 {font-size: 43.2px;}
+    h3 {font-size: 26.7px;}
+    p {font-size: 15px;}
+    .text {height: 100px;}
+    #hero {height: 700px;}
+
+    #about-section {
+        margin-top: 0;
+        position: relative;
+        height: 1000px;
+        width: 100%;
+    }
+
+    .about-1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height:50%;
+        width: 100%;
+    }
+    
+    .about-2 {
+        position: relative;
+        top:0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .about-1-image {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 50%;
+        bottom: 0;
+        background-image: url(/img/cecceimg1.jpg);
+        background-size: 60% auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .about-1-text {
+        position: absolute;
+        left: 52%;
+        width: 50%;
+        height: 80%;
+        top: 0;
+    }
+    
+    .about-1-text p {
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        top: 0;
+        left: 0;
+    }
+    .hamburger {
+        display: none;
+        z-index: 4;
+    }
+
+    .hamburger-menu {
+        display: none !important;
+    }
+
+    #contact-section {
+        height: 250px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 829px) {
+    h1 {font-size: 30.9px;}
+    h2 {font-size: 30.9px;}
+    h3 {font-size: 19px;}
+    p {font-size: 15px;}
+    .text {height: 60px;}
+    #hero {height: 400px;}
+    .nav li {display:none;}
+
+
+    .about-1 {
+        border: 2px solid blue;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height:50%;
+        width: 100%;
+    }
+    
+    .about-2 {
+        position: relative;
+        top:0;
+        width: 100%;
+        height: 50%;
+    }
+
+    #about-section {
+        border:2px solid red;
+        margin-top: 0;
+        position: relative;
+        height: 1500px;
+        width: 100%;
+    }
+    .about-1-image {
+        position: absolute;
+        top:50%;
+        left:0;
+
+        width: 100%;
+        bottom:0;
+        background-image: url(/img/cecceimg1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .about-1-text{
+        position: absolute;
+        top:0;
+        left: 30px;
+        right: 30px;
+        border: 2px solid green;
+    }
+
+    .hamburger {
+        display:block;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    #contact-section {
+        height: 220px;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 365px){
+    h1 {font-size: 25px;}
+    h2 {font-size: 25px;}
+    h3 {font-size: 15.6px;}
+    p {font-size: 12px;}
+    .text {height: 55px;}
+    #hero {height: 400px;}
+
+    .nav li {display:none;}
+    .about-1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height:50%;
+        width: 100%;
+    }
+    
+    .about-2 {
+        position: relative;
+        top:0;
+        width: 100%;
+        height: 50%;
+    }
+
+    #about-section {
+        border:2px solid red;
+        margin-top: 0;
+        position: relative;
+        height: 1500px;
+        width: 100%;
+    }
+    .about-1-image {
+        position: absolute;
+        top:50%;
+        left:0;
+
+        width: 100%;
+        bottom:0;
+        background-image: url(/img/cecceimg1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .about-1-text{
+        position: absolute;
+        top:0;
+        left: 30px;
+        right: 30px;
+    }
+    .about-1-text p{
+        border: 2px solid blue;
+        position: absolute;
+        top: 0;
+    }
+    .hamburger {
+        display:block;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    #contact-section {
+        height: 200px;
+    }
+}
+
+@media (max-width: 364px){
+    h1 {font-size: 20.8px;}
+    h2 {font-size: 20.8px;}
+    h3 {font-size: 13px;}
+    p {font-size: 11px;}
+    .text {height: 45px;}
+    #hero {height: 400px;}
+    
+    .nav li {display:none;}
+
+    .about-1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height:50%;
+        width: 100%;
+    }
+    
+    .about-2 {
+        position: relative;
+        top:0;
+        width: 100%;
+        height: 50%;
+    }
+
+    #about-section {
+        border:2px solid red;
+        margin-top: 0;
+        position: relative;
+        height: 1500px;
+        width: 100%;
+    }
+    .about-1-image {
+        position: absolute;
+        top:55%;
+        left:0;
+
+        width: 100%;
+        bottom:0;
+        background-image: url(/img/cecceimg1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .about-1-text{
+        position: absolute;
+        top:0;
+        left: 30px;
+        right: 30px;
+    }
+
+    .hamburger {
+        display:block;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    #contact-section {
+        height: 250px;
+    }
+}
+
+.hamburger-menu {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(2){opacity:0; }
+.hamburger.active .bar:nth-child(1){transform: translateY(8px) rotate(45deg);}
+.hamburger.active .bar:nth-child(3){transform: translateY(-8px) rotate(-45deg);}
+.hamburger.active {z-index: 12;}
+
+.hamburger-menu.active {
+    display:flex;
+    position: fixed;
+    opacity: 1;
+    background-color:black;
+    z-index: 3;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hamburger-nav-item {
+    text-align: center;
+    flex: 1;
+}
+
+.hamburger-nav-item a {
+    color: white;
+    font-size: xx-large;
+}
+
+.hamburger-nav-item a:hover {
+    color: var(--text-color-3)
+}
+
+body {
+    background-color: var(--hero-color);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+#header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    z-index: 2;
+    background-color: var(--header-color);
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    z-index: 3;
+}
+
+#hero {
+    position: relative;
+    left: 0;
+    width: 100%;
+    background-image: url('/img/cecceimg1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#music-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+#music-section h1{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+}
+
+#contact-section {
+    position: relative;
+    background-color: var(--hero-color);
+    width: 100%;
+    
+}
+
+.contact-h2 {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    font-weight: lighter;
+    transform: translate(-50%, 0);
+}
+
+.email {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 0);
+}
+
+.contact-h3 {
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%, 0);
+}
+
+.logos {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 5%;
+    display:flex;
+    gap: 20px;
+}
+
+.insta-logo {
+    flex: 1;
+}
+
+.img-logo {
+    height: 35px;
+}
+
+.facebook-logo {
+    flex: 1;
+}
+
+.youtube-logo {
+    flex: 1;
+}
+
+a {
+    font: 20px/20px 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    width: 250px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo .text-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 440px;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.divisore {
+    width: 2px;
+    height: 30px;
+    background-color: white;
+    display: block;
+}
+
+#home:hover .text-wrap,
+#about:hover .text-wrap,
+#music:hover .text-wrap,
+#contact:hover .text-wrap {
+    color: var(--text-color-3);
+}
+
+.text-wrap { 
+    color: white;
+}
+
+.bar {
+    display: block;
+    background-color: white;
+    width:25px;
+    height:3px;
+    margin: 5px auto;
+}
+
+.hamburger:hover .bar {
+    background-color: var(--text-color-3);
+}
+
+.column-layout {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/cecceimg4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
+    width: 70%;
+}
+
+.titolo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+.h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+.about-2-image {
+    position: absolute;
+        bottom: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/img/cecceimg2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100% auto;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
