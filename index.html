@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="real2.css">
+</head>
+<body>
+    <div class="section" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href=""><span class="text-wrap">CESARE PANIZZI</span></a>
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                    <li id="home">
+                        <a href="#hero">
+                            <span class="text-wrap">Home</span>
+                        </a>
+                    </li>
+                    <li><span class="divisore"></span></li>
+                    <li id="about">
+                        <a href="#about-section">
+                            <span class="text-wrap">About</span>
+                        </a>
+                    </li>
+                    <li><span class="divisore"></span></li>
+                    <li id="music">
+                        <a href="#music-section">
+                            <span class="text-wrap">Music</span>
+                        </a>
+                    </li>
+                    <li><span class="divisore"></span></li>
+                    <li id="contact">
+                        <a href="#contact-section">
+                            <span class="text-wrap">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hamburger-menu">
+        <ul class="hamburger-nav">
+            <li class="hamburger-nav-item"><a href="#hero" class="hamburger-nav-item-link">Home</a></li>
+            <li class="hamburger-nav-item"><a href="#about-section" class="hamburger-nav-item-link">About</a></li>
+            <li class="hamburger-nav-item"><a href="#music-section" class="hamburger-nav-item-link">Music</a></li>
+            <li class="hamburger-nav-item"><a href="#contact-section" class="hamburger-nav-item-link">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        hamburger.addEventListener ("click", () => {
+            hamburger.classList.toggle ("active");
+            hamburgerMenu.classList.toggle ("active");
+        }
+        );
+        document.querySelectorAll(".hamburger-nav-item-link").forEach((item) =>
+            item.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            hamburgerMenu.classList.remove("active");
+            })
+        );
+    </script>
+    <div class="section" id="hero">
+        <div class="column-layout">
+            <div class="text">
+                <h1 class="titolo">CESARE PANIZZI</h1>
+                <h3 class="h3">pianist | composer | educator </h3>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="music-section">
+        <div class="music"> 
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4Jg24yECXUY3LbcFfCp4zG?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+        </div>
+    </div>
+    <div class="section" id="about-section">
+        <div class="about-1">
+            <div class="about-1-image">
+            </div>
+            <div class="about-1-text">
+                <p>Cesare Panizzi è un pianista, e compositore italiano. Originario di Parma, inizia il suo percorso
+                    musicale all'età di 6 anni, dedicandosi con passione allo studio del pianoforte. In seguito, viene
+                    ammesso al Conservatorio "Arrigo Boito" di Parma, dove ottiene il diploma in pianoforte classico
+                    nel 2019.
+                    Prosegue la sua formazione musicale negli Stati Uniti, presso la Berklee College of Music di
+                    Boston, grazie a una borsa di studio completa. Qui studia sotto la guida di illustri figure tra le quali
+                    NEA Jazz Master Joanne Brackeen, Billy Kilson e Danilo Pérez, conseguendo la Laurea in Music
+                    Performance nel 2023. Dopo essersi laureato, si trasferisce a New York City, dove ha occasione di
+                    suonare in luoghi prestigiosi con artisti di fama internazionale come Eric Alexander, Rodney Green,
+                    Giuseppe Cucchiara e Ben Solomon.
+                    Nel giugno 2024, dopo essere tornato in Italia, vince il prestigioso Premio Massimo Urbani per
+                    solisti jazz, grazie al quale tra poco farà uscire un album di composizioni originali e andrà in tour
+                    con il suo trio.</p>
+            </div>
+        </div>
+        <div class="about-2">
+            <div class="about-2-image">
+            </div>
+        </div>
+    </div>
+    <div class="section" id="contact-section"> 
+        <div class="contact-h2">
+            <h2>Contacts</h2>
+        </div>
+        <div class="email">
+            <p>cpanizzi.music@gmail.com</p>
+        </div>
+        <div class="contact-h3">
+            <h3>Follow me on</h3>
+        </div>
+        <ul class="logos">
+            <li id="insta-logo">
+                <a href="https://www.instagram.com/giovanni_panizzi/"> <img class="img-logo" src="/img/Instagram_Glyph_Gradient.png"> </a>
+            </li>
+            <li id="facebook-logo">
+                <a href="https://www.instagram.com/giovanni_panizzi/"> <img class="img-logo" src="/img/Facebook_Logo_Primary.png"> </a>
+            </li>
+            <li id="youtube-logo">
+                <a href="https://www.instagram.com/giovanni_panizzi/"> <img class="img-logo" src="/img/yt_logo_rgb_dark.png"> </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
