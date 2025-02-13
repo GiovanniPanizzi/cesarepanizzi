@@ -183,7 +183,6 @@ p {
 
 
     .about-1 {
-        border: 2px solid blue;
         position: relative;
         top: 0;
         left: 0;
@@ -200,7 +199,6 @@ p {
     }
 
     #about-section {
-        border:2px solid red;
         margin-top: 0;
         position: relative;
         height: 1500px;
@@ -223,7 +221,6 @@ p {
         top:0;
         left: 30px;
         right: 30px;
-        border: 2px solid green;
     }
 
     .hamburger {
@@ -263,7 +260,6 @@ p {
     }
 
     #about-section {
-        border:2px solid red;
         margin-top: 0;
         position: relative;
         height: 1500px;
@@ -288,7 +284,6 @@ p {
         right: 30px;
     }
     .about-1-text p{
-        border: 2px solid blue;
         position: absolute;
         top: 0;
     }
@@ -330,7 +325,6 @@ p {
     }
 
     #about-section {
-        border:2px solid red;
         margin-top: 0;
         position: relative;
         height: 1500px;
