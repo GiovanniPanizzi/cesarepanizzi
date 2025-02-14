@@ -7,12 +7,64 @@
     --hero-color: black;
 }
 
-.music {height: 100%;
+.music {
+    position: absolute;
+    height: 80%;
     width: 100%;
+    top: 10%;
     display:flex;
 }
+.music-intro{
+    position:absolute;
+    top:0;
+    width: 100%;
+    height: 10%;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.music-stuff{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+}
+.music-links{
+    left: 15%;
+    right: 15%;
+    top: 10%;
+    align-content: center;
+    position: absolute;
+    display:flex;
+}
+
+#spotify-logo{
+    flex:1;
+}
+#dezzer-logo{flex:1;}
+
+#amazon-logo{flex:1;}
+
+#apple-logo{flex: 1;}
+
+#tidal-logo{flex: 1;}
+
+.music-logo{
+    height: 30px;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+.frame {
+    flex:1;
 }
 
 * {
@@ -52,21 +104,14 @@ p {
         top: 0;
         left: 0;
         right: 0;
-        height:50%;
+        height:100%;
         width: 100%;
-    }
-    
-    .about-2 {
-        position: relative;
-        top:0;
-        width: 100%;
-        height: 50%;
     }
 
     #about-section {
-        margin-top: 0;
+        margin-top: 20px;
         position: relative;
-        height: 1000px;
+        height: 500px;
         width: 100%;
     }
 
@@ -109,9 +154,9 @@ p {
     #hero {height: 700px;}
 
     #about-section {
-        margin-top: 0;
+        margin-top: 20px;
         position: relative;
-        height: 1000px;
+        height: 500px;
         width: 100%;
     }
 
@@ -120,17 +165,10 @@ p {
         top: 0;
         left: 0;
         right: 0;
-        height:50%;
+        height:100%;
         width: 100%;
     }
     
-    .about-2 {
-        position: relative;
-        top:0;
-        width: 100%;
-        height: 50%;
-    }
-
     .about-1-image {
         position: absolute;
         top:0;
@@ -187,21 +225,14 @@ p {
         top: 0;
         left: 0;
         right: 0;
-        height:50%;
+        height:100%;
         width: 100%;
-    }
-    
-    .about-2 {
-        position: relative;
-        top:0;
-        width: 100%;
-        height: 50%;
     }
 
     #about-section {
-        margin-top: 0;
+        margin-top: 20px;
         position: relative;
-        height: 1500px;
+        height: 600px;
         width: 100%;
     }
     .about-1-image {
@@ -248,21 +279,14 @@ p {
         top: 0;
         left: 0;
         right: 0;
-        height:50%;
+        height:100%;
         width: 100%;
-    }
-    
-    .about-2 {
-        position: relative;
-        top:0;
-        width: 100%;
-        height: 50%;
     }
 
     #about-section {
-        margin-top: 0;
+        margin-top: 20px;
         position: relative;
-        height: 1500px;
+        height: 600px;
         width: 100%;
     }
     .about-1-image {
@@ -313,21 +337,14 @@ p {
         top: 0;
         left: 0;
         right: 0;
-        height:50%;
+        height:100%;
         width: 100%;
-    }
-    
-    .about-2 {
-        position: relative;
-        top:0;
-        width: 100%;
-        height: 50%;
     }
 
     #about-section {
-        margin-top: 0;
+        margin-top: 20px;
         position: relative;
-        height: 1500px;
+        height: 600px;
         width: 100%;
     }
     .about-1-image {
@@ -374,10 +391,10 @@ p {
     position: fixed;
     opacity: 1;
     background-color:black;
-    z-index: 3;
+    z-index: 1;
     transition: opacity 0.4s ease, max-height 0.4s ease;
     left: 0;
-    top: 60px;
+    top: 0px;
     width: 100%;
     height: 100%;
 }
@@ -443,16 +460,9 @@ body {
 
 #music-section {
     position: relative;
+    margin-top: 20px;
     width: 100%;
     height: 600px;
-}
-
-#music-section h1{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-30%, -50%);
 }
 
 #contact-section {
@@ -620,19 +630,6 @@ a {
     font-weight: normal;
 }
 
-.about-2-image {
-    position: absolute;
-        bottom: 0;
-        left:0;
-        width: 100%;
-        height: 100%;
-        background-image: url(img/cecceimg2.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: 100% auto;
-}
-
 .column {
     flex: 1;
     display: flex;
@@ -646,3 +643,13 @@ a {
     transform: translate(0, -50%);
 }
 
+.image2{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-image: url(img/cecceimg3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
