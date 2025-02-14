@@ -14,6 +14,9 @@
     top: 10%;
     display:flex;
 }
+.frame {
+    flex: 1;
+}
 .music-intro{
     position:absolute;
     top:0;
@@ -56,7 +59,7 @@
 #tidal-logo{flex: 1;}
 
 .music-logo{
-    height: 30px;
+    width: 70%;
 }
 
 html {
@@ -109,9 +112,9 @@ p {
     }
 
     #about-section {
-        margin-top: 20px;
+        margin-top: 50px;
         position: relative;
-        height: 500px;
+        height: 700px;
         width: 100%;
     }
 
@@ -154,9 +157,9 @@ p {
     #hero {height: 700px;}
 
     #about-section {
-        margin-top: 20px;
+        margin-top: 50px;
         position: relative;
-        height: 500px;
+        height: 700px;
         width: 100%;
     }
 
@@ -230,9 +233,9 @@ p {
     }
 
     #about-section {
-        margin-top: 20px;
+        margin-top: 50px;
         position: relative;
-        height: 600px;
+        height: 900px;
         width: 100%;
     }
     .about-1-image {
@@ -284,9 +287,9 @@ p {
     }
 
     #about-section {
-        margin-top: 20px;
+        margin-top: 50px;
         position: relative;
-        height: 600px;
+        height: 900px;
         width: 100%;
     }
     .about-1-image {
@@ -342,9 +345,9 @@ p {
     }
 
     #about-section {
-        margin-top: 20px;
+        margin-top: 50px;
         position: relative;
-        height: 600px;
+        height: 1000px;
         width: 100%;
     }
     .about-1-image {
