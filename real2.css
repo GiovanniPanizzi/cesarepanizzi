@@ -13,6 +13,7 @@
     margin: 0 auto;
     width: auto;
 }
+
 .music {
     position: absolute;
     height: 80%;
@@ -129,7 +130,7 @@ p {
     #about-section {
         margin-top: 20px;
         position: relative;
-        height: 800px;
+        height: 1000px;
         width: 100%;
     }
 
@@ -142,11 +143,9 @@ p {
     }
     
     .about-1-text p {
-        position: absolute;
-        left: 30px;
-        right: 30px;
-        top: 0;
-        left: 0;
+        position: relative;
+        width: 80%;
+        margin-bottom: 20px;
     }
 
     .hamburger {
@@ -174,7 +173,7 @@ p {
     #about-section {
         margin-top: 0;
         position: relative;
-        height: 800px;
+        height: 1100px;
         width: 100%;
     }
 
@@ -208,12 +207,11 @@ p {
     }
     
     .about-1-text p {
-        position: absolute;
-        left: 30px;
-        right: 30px;
-        top: 0;
-        left: 0;
+        position: relative;
+        width: 80%;
+        margin-bottom: 20px;
     }
+    
     .hamburger {
         display: none;
         z-index: 4;
@@ -250,7 +248,7 @@ p {
     #about-section {
         margin-top: 0;
         position: relative;
-        height: 1000px;
+        height: 1500px;
         width: 100%;
     }
     .about-1-image {
@@ -270,6 +268,12 @@ p {
         left: 30px;
         right: 30px;
         top: 2%;
+    }
+    
+    .about-1-text p {
+        position: relative;
+        width: 80%;
+        margin-bottom: 20px;
     }
 
     .hamburger {
@@ -304,7 +308,7 @@ p {
     #about-section {
         margin-top: 0;
         position: relative;
-        height: 1000px;
+        height: 1500px;
         width: 100%;
     }
     .about-1-image {
@@ -325,9 +329,10 @@ p {
         left: 30px;
         right: 30px;
     }
-    .about-1-text p{
-        position: absolute;
-        top: 0;
+    .about-1-text p {
+        position: relative;
+        width: 80%;
+        margin-bottom: 20px;
     }
     .hamburger {
         display:block;
@@ -344,7 +349,7 @@ p {
     h1 {font-size: 25px;}
     h2 {font-size: 25px;}
     h3 {font-size: 15.6px;}
-    p {font-size: 11px;}
+    p {font-size: 12px;}
     .text {height: 55px;}
     #hero {height: 400px;}
 
@@ -361,7 +366,7 @@ p {
     #about-section {
         margin-top: 0;
         position: relative;
-        height: 1000px;
+        height: 1500px;
         width: 100%;
     }
     .about-1-image {
@@ -382,9 +387,10 @@ p {
         left: 30px;
         right: 30px;
     }
-    .about-1-text p{
-        position: absolute;
-        top: 0;
+    .about-1-text p {
+        position: relative;
+        width: 80%;
+        margin-bottom: 20px;
     }
     .hamburger {
         display:block;
@@ -419,7 +425,7 @@ p {
     #about-section {
         margin-top: 0;
         position: relative;
-        height: 1100px;
+        height: 1500px;
         width: 100%;
     }
     .about-1-image {
@@ -439,6 +445,12 @@ p {
         top: 2%;
         left: 30px;
         right: 30px;
+    }
+    
+    .about-1-text p {
+        position: relative;
+        width: 80%;
+        margin-bottom: 20px;
     }
 
     .hamburger {
