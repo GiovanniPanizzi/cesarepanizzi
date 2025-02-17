@@ -7,6 +7,12 @@
     --hero-color: black;
 }
 
+.main {
+    position: relative;
+    max-width: 2560px;
+    margin: 0 auto;
+    width: auto;
+}
 .music {
     position: absolute;
     height: 80%;
@@ -39,9 +45,11 @@
     bottom: 0;
 }
 .music-links{
-    left: 15%;
-    right: 15%;
-    top: 10%;
+    width: 80%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     align-content: center;
     position: absolute;
     display:flex;
@@ -87,7 +95,7 @@ p {
     h1 {font-size: 55.6px;}
     h2 {font-size: 55.6px;}
     h3 {font-size: 34.4px;}
-    p {font-size: 17px;}
+    p {font-size: 16px;}
     .text {height: 120px;}
     #hero {height: 750px;}
     .about-1-image {
@@ -121,9 +129,9 @@ p {
     .about-1-text {
         position: absolute;
         left: 52%;
-        width: 50%;
+        width: 45%;
         height: 80%;
-        top: 0;
+        top: 10%;
     }
     
     .about-1-text p {
@@ -189,7 +197,7 @@ p {
         left: 52%;
         width: 50%;
         height: 80%;
-        top: 0;
+        top: 5%;
     }
     
     .about-1-text p {
@@ -217,7 +225,7 @@ p {
     h1 {font-size: 30.9px;}
     h2 {font-size: 30.9px;}
     h3 {font-size: 19px;}
-    p {font-size: 15px;}
+    p {font-size: 14.5px;}
     .text {height: 60px;}
     #hero {height: 400px;}
     .nav li {display:none;}
@@ -252,9 +260,9 @@ p {
     }
     .about-1-text{
         position: absolute;
-        top:0;
         left: 30px;
         right: 30px;
+        top: 2%;
     }
 
     .hamburger {
@@ -268,11 +276,11 @@ p {
     }
 }
 
-@media (max-width: 600px) and (min-width: 365px){
+@media (max-width: 600px) and (min-width: 500px){
     h1 {font-size: 25px;}
     h2 {font-size: 25px;}
     h3 {font-size: 15.6px;}
-    p {font-size: 12px;}
+    p {font-size: 13px;}
     .text {height: 55px;}
     #hero {height: 400px;}
 
@@ -306,7 +314,64 @@ p {
     }
     .about-1-text{
         position: absolute;
-        top:0;
+        top: 2%;
+        left: 30px;
+        right: 30px;
+    }
+    .about-1-text p{
+        position: absolute;
+        top: 0;
+    }
+    .hamburger {
+        display:block;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    #contact-section {
+        height: 200px;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 365px){
+    h1 {font-size: 25px;}
+    h2 {font-size: 25px;}
+    h3 {font-size: 15.6px;}
+    p {font-size: 11px;}
+    .text {height: 55px;}
+    #hero {height: 400px;}
+
+    .nav li {display:none;}
+    .about-1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+    }
+
+    #about-section {
+        margin-top: 50px;
+        position: relative;
+        height: 900px;
+        width: 100%;
+    }
+    .about-1-image {
+        position: absolute;
+        top:50%;
+        left:0;
+
+        width: 100%;
+        bottom:0;
+        background-image: url(img/cecceimg1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .about-1-text{
+        position: absolute;
+        top: 2%;
         left: 30px;
         right: 30px;
     }
@@ -364,7 +429,7 @@ p {
     }
     .about-1-text{
         position: absolute;
-        top:0;
+        top: 2%;
         left: 30px;
         right: 30px;
     }
@@ -387,7 +452,7 @@ p {
 .hamburger.active .bar:nth-child(2){opacity:0; }
 .hamburger.active .bar:nth-child(1){transform: translateY(8px) rotate(45deg);}
 .hamburger.active .bar:nth-child(3){transform: translateY(-8px) rotate(-45deg);}
-.hamburger.active {z-index: 12;}
+.hamburger.active .bar{color: white;}
 
 .hamburger-menu.active {
     display:flex;
@@ -437,8 +502,10 @@ body {
     position: fixed;
     height: 60px;
     width: 100%;
+    max-width: 2560px;
     top: 0px;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     z-index: 2;
     background-color: var(--header-color);
 }
@@ -649,7 +716,7 @@ a {
 .image2{
     position: relative;
     height: 500px;
-    width: 100%;
+    width: auto;
     background-image: url(img/cecceimg3.jpg);
     background-position: center;
     background-size: cover;
